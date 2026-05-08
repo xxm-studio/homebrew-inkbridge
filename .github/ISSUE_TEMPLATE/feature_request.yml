@@ -1,0 +1,52 @@
+name: Feature request
+description: Suggest a new feature or an improvement.
+title: "[Feat] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The most useful feature requests describe the **goal** in your
+        own words first, then where InkBridge currently falls short.
+        Concrete usage stories beat abstract wishlists every time.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The actual goal, in your own words.
+      placeholder: |
+        e.g. "I'm sketching mechanical part dimensions in Excalidraw and
+        want vertical strokes to snap to the Y axis when I hold a
+        modifier on the Pencil."
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: Why doesn't InkBridge work for that today?
+      placeholder: |
+        e.g. "There's no per-axis snap modifier — all four squeeze /
+        barrel-roll mappings I have available do something else."
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: How would you like it to work? (optional)
+      description: A specific design isn't required. "I don't know, just want it to feel like X" is a fine answer.
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workarounds you've tried (optional)
+
+  - type: checkboxes
+    id: dupe
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched the existing issues and didn't find a duplicate.
+          required: true

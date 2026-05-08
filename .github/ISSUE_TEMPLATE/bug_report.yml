@@ -1,0 +1,118 @@
+name: Bug report
+description: Something isn't working as expected.
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report. The fields below are the
+        ones we'll need every time to reproduce — filling them in
+        upfront skips a back-and-forth round.
+
+  - type: input
+    id: ipad-model
+    attributes:
+      label: iPad model
+      description: e.g. iPad mini 7 · iPad Pro 11" 4th gen · iPad Air 6 (M2)
+      placeholder: iPad mini 7
+    validations:
+      required: true
+
+  - type: input
+    id: ipados-version
+    attributes:
+      label: iPadOS version
+      description: Settings → General → About → Software Version
+      placeholder: "17.5.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pencil
+    attributes:
+      label: Apple Pencil
+      options:
+        - Apple Pencil (1st gen)
+        - Apple Pencil (2nd gen)
+        - Apple Pencil Pro
+        - Apple Pencil (USB-C)
+        - Other / not applicable
+    validations:
+      required: true
+
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+      description: e.g. Mac mini M4 · MacBook Pro 14" M3 · iMac M1
+      placeholder: Mac mini M4
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      description: Apple menu → About This Mac
+      placeholder: "14.5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection in use when the bug happened
+      options:
+        - USB-C cable
+        - Wireless (AWDL / Wi-Fi)
+        - Hot-swapping between USB and wireless
+        - Not connected (bug is on one side only)
+    validations:
+      required: true
+
+  - type: input
+    id: target-app
+    attributes:
+      label: Target Mac app
+      description: Which drawing / Mac app you were using when the bug appeared. e.g. Excalidraw in Safari · Krita · Apple Notes
+      placeholder: Excalidraw
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Plug iPad into Mac via USB-C
+        2. Open Excalidraw in Safari, pick the freedraw tool
+        3. Touch Apple Pencil to iPad and start drawing…
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: extras
+    attributes:
+      label: Anything else
+      description: Logs, screenshots, video — all welcome but optional. Drag files directly into the textarea to attach.
+
+  - type: checkboxes
+    id: dupe
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched the existing issues and didn't find a duplicate.
+          required: true

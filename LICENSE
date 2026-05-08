@@ -1,0 +1,27 @@
+Copyright (c) 2026 XXM Studio. All rights reserved.
+
+This repository (xxm-studio/homebrew-inkbridge) supports the
+distribution and feedback collection of InkBridge, a proprietary
+software product.
+
+The InkBridge software — including the Mac application, the iPad
+application, and any binaries hosted under the Releases tab of this
+repository — is closed-source. End users receive a license to
+download and run the software via:
+
+  • the in-application license agreement displayed on first launch
+    (Mac), or
+  • the Apple App Store standard license terms (iPad).
+
+The non-binary contents of this repository (README, issue templates,
+GitHub configuration, and any future Homebrew formulae) are also
+© XXM Studio. They are made available publicly to enable installation
+and feedback workflows for the InkBridge software. They may not be
+copied, modified, or redistributed for purposes outside of installing
+and using the InkBridge software without prior written permission
+from XXM Studio.
+
+For commercial licensing, source-access requests, or any other
+permissions:
+
+    xxmstudio.us@gmail.com
