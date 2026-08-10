@@ -1,6 +1,6 @@
 cask "inkbridge" do
-  version "1.0.3"
-  sha256 "d9dc4ee9ab9f54c04782e9d3920c2cb3f031c92c26aa837ae5f913ce3f14e73d"
+  version "1.1.0"
+  sha256 "dc393e983cf82f5c2d13dada9516dbae1e8f944ddccb0640d449e8fc537d573d"
 
   url "https://github.com/xxm-studio/homebrew-inkbridge/releases/download/v#{version}/InkBridge-#{version}.dmg",
       verified: "github.com/xxm-studio/homebrew-inkbridge/"
@@ -14,7 +14,6 @@ cask "inkbridge" do
   end
 
   depends_on macos: :sonoma
-  depends_on arch: :arm64
 
   app "InkBridge.app"
 
