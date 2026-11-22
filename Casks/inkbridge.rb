@@ -1,6 +1,6 @@
 cask "inkbridge" do
-  version "1.1.3"
-  sha256 "75d7bab2d4c062614ced1376657a91dbe08d9ad5aa1d152d56e7d1f530f7ceb9"
+  version "1.1.4"
+  sha256 "0f30e076334f05bcb1628afa85b84f8c9805dc80361579d7012b842348ba3d4b"
 
   url "https://github.com/xxm-studio/homebrew-inkbridge/releases/download/v#{version}/InkBridge-#{version}.dmg",
       verified: "github.com/xxm-studio/homebrew-inkbridge/"
